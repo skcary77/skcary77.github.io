@@ -7,10 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>true</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skcary77.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Banff Camping Title</title>
+      <link>https://skcary77.github.io/blog/banffcampsites/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skcary77.github.io/blog/banffcampsites/</guid>
+      <description>Camping in Banff Finding a campsite in Banff National Park isn&amp;rsquo;t the easiest process. It involves navigating to the Parks Canada Website and downloading a monster 181 page PDF document. The PDF lists all of the campsites and the spaces available for the next 90 days. Each date appears on a separate line. The easiest way to find your campsite is to use Ctrl + F to search the document.</description>
+    </item>
+    
+    <item>
+      <title>Testing RMD Post</title>
+      <link>https://skcary77.github.io/blog/testpost/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skcary77.github.io/blog/testpost/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min.</description>
+    </item>
+    
+    <item>
+      <title>Testing RMD Post</title>
+      <link>https://skcary77.github.io/blog/testpost/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skcary77.github.io/blog/testpost/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>
@@ -39,7 +69,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
       
       <guid>https://skcary77.github.io/about/</guid>
-      <description>Welcome to the Osprey Theme To create an about section, generate an about.md file in your content folder by doing:
+      <description>Welcome to the Osprey Theme To create an about ❤️ section, generate an about.md file in your ❤️ content folder by doing:
 $ hugo new about.md  Then add your own content to the markdown file. Everything in the file will be generated to show here on the home page.</description>
     </item>
     
@@ -71,7 +101,7 @@ $ hugo new about.md  Then add your own content to the markdown file. Everything 
     </item>
     
     <item>
-      <title>Rugged Fellows Guide</title>
+      <title>Banff Campsite Scheduler</title>
       <link>https://skcary77.github.io/gallery/rugged-fellows-guide/</link>
       <pubDate>Mon, 15 May 2017 21:52:57 -0700</pubDate>
       
