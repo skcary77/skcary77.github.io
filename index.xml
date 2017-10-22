@@ -23,6 +23,24 @@ Background As a data analyst, I spend a lot of time on my computer at the office
     </item>
     
     <item>
+      <title>More Projects Coming Soon</title>
+      <link>https://skcary77.github.io/gallery/coming-soon/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skcary77.github.io/gallery/coming-soon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Banff National Park Campsite Scheduler</title>
+      <link>https://skcary77.github.io/gallery/banff-campsite-scheduler/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skcary77.github.io/gallery/banff-campsite-scheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hello, Friend</title>
       <link>https://skcary77.github.io/about/</link>
       <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
@@ -30,24 +48,6 @@ Background As a data analyst, I spend a lot of time on my computer at the office
       <guid>https://skcary77.github.io/about/</guid>
       <description>Lets build something together My name is Stuart. I solve problems using data. I currently work within the Business Intelligence division of a consumer packaged goods company, with previous experience as a portfolio analyst for a wealth management firm.
 This site is a collection of my thoughts, projects and interests. I&amp;rsquo;m fascinated by the open source community, and all that can be learned/built from it. I try to work with open source tools such as R as much as I can, and in the spirit of collaboration, share what I learn along the way.</description>
-    </item>
-    
-    <item>
-      <title>More Projects Coming Soon</title>
-      <link>https://skcary77.github.io/gallery/coming-soon/</link>
-      <pubDate>Mon, 15 May 2017 22:25:16 -0700</pubDate>
-      
-      <guid>https://skcary77.github.io/gallery/coming-soon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Banff Campsite Scheduler</title>
-      <link>https://skcary77.github.io/gallery/banff-campsite-scheduler/</link>
-      <pubDate>Mon, 15 May 2017 21:52:57 -0700</pubDate>
-      
-      <guid>https://skcary77.github.io/gallery/banff-campsite-scheduler/</guid>
-      <description></description>
     </item>
     
   </channel>
