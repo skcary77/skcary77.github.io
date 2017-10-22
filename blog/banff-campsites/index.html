@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        
+
+        <title>
+            
+            
+                Using R to go camping | Stuart Cary
+            
+        </title>
+
+        <meta name="title" content="Using R to go camping | Stuart Cary">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer-when-downgrade">
+        <meta name="generator" content="">
+        <base href="https://skcary77.github.io">
+        <meta name="description" content="Full-stack web developer and UI/UX enthusiast based in San Diego, CA.">
+        
+        <meta name="author" content="Toma Nistor">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@TomaNistor">
+        <meta name="twitter:creator" content="@TomaNistor">
+        
+        <meta property="og:title" content="Using R to go camping | Stuart Cary">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://skcary77.github.io">
+        <meta property="og:image" content="https://skcary77.github.io/images/osprey.png">
+        <meta property="og:description" content="Full-stack web developer and UI/UX enthusiast based in San Diego, CA.">
+        
+
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="https://skcary77.github.io/images/logo/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://skcary77.github.io/images/logo/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://skcary77.github.io/images/logo/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://skcary77.github.io/images/logo/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://skcary77.github.io/images/logo/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://skcary77.github.io/images/logo/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://skcary77.github.io/images/logo/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://skcary77.github.io/images/logo/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://skcary77.github.io/images/logo/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/logo/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://skcary77.github.io/images/logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://skcary77.github.io/images/logo/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://skcary77.github.io/images/logo/favicon-16x16.png">
+        <link rel="manifest" href="images/logo/manifest.json">
+        <meta name="msapplication-TileColor" content="#FFF">
+        <meta name="msapplication-TileImage" content="/images/logo/ms-icon-144x144.png">
+        <meta name="theme-color" content="#FFF">
+        
+
+        <link rel="canonical" href="https://skcary77.github.io/blog/banff-campsites/">
+        
+        <link rel="stylesheet" href="https://skcary77.github.io/styles/main.css" type="text/css">
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">
+        
+    </head>
+
+    <body>
+        
+
+        
+
+        <nav class="row middle-xs center-xs">
+            <div class="col-xs-6 col-sm-1 logo">
+                <a href="https://skcary77.github.io"><img src="https://skcary77.github.io/images/SmallLogo.png" alt="Stuart Cary"></a>
+            </div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="https://skcary77.github.io/#about">About</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="https://skcary77.github.io/#work">Work</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="https://skcary77.github.io/#blog">Blog</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="https://skcary77.github.io/#contact">Contact</a></h3></div>
+            
+            <div class="col-xs-6 col-sm-1 nav-toggle">
+                <a href="" class="nav-icon" onclick="return false"><img src="https://skcary77.github.io/images/icon-menu.png" alt="Open Menu"><img src="https://skcary77.github.io/images/icon-x.png" alt="Close Menu" style="display: none;"></a>
+            </div>
+        </nav>
+        <section class="nav-full row middle-xs center-xs">
+            <div class="col-xs-12">
+                <div class="row middle-xs center-xs">
+                    
+                    <div class="col-xs-12"><h1><a href="https://skcary77.github.io/#about">About</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="https://skcary77.github.io/#work">Work</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="https://skcary77.github.io/#blog">Blog</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="https://skcary77.github.io/#contact">Contact</a></h1></div>
+                    
+                </div>
+            </div>
+        </section>
+        <main>
+
+
+    <section class="container">
+        <section class="content">
+            <h1> Using R to go camping </h1>
+
+            <div class="sub-header">
+                October 2017 · 8 minute read
+            </div>
+
+            <div class="entry-content">
+                
+
+<p><em>Note: The final Shiny app is available
+<a href="https://followthedata.shinyapps.io/banff-campsites/">here</a>, and the
+code is available on
+<a href="https://github.com/skcary77/banff-campsites">GitHub</a>. This post dives
+into the details for those interested</em></p>
+
+<h2 id="background">Background</h2>
+
+<p>As a data analyst, I spend a lot of time on my computer at the office.
+Unfortunately, I don&rsquo;t have the best view of the outside world from my
+cubicle. In fact, they have decided to put us analysts in the basement
+where we can&rsquo;t even see the sun! Needless to say, when the weekend rolls
+around, I love to get outside. In fact my wife and I recently planned a
+weeklong trip to Banff National Park in Alberta Canada, and the views
+were incredible.</p>
+
+<p><img src="https://skcary77.github.io/blog/banff-campsites/banffPics.png" alt="" /></p>
+
+<p>During the planning process, I happened upon a project that I thought
+would be a great opportunity to put my R skills to use, and learn some
+new ones along the way. Read on for the details.</p>
+
+<h2 id="camping-in-banff">Camping in Banff</h2>
+
+<p>We spent three nights backpacking in Banff National Park, and the rest
+of the time in town. If you&rsquo;ve never been (I highly recommend it),
+finding a campsite in Banff isn&rsquo;t the easiest process. It involves going
+to the <a href="https://www.pc.gc.ca/en/pn-np/ab/banff/activ/randonee-backpacking">Parks Canada
+Website</a>,
+downloading and then navigating through a monster 181 page PDF document.</p>
+
+<p><img src="https://skcary77.github.io/blog/banff-campsites/banffPDF.png" alt="" /></p>
+
+<p>Thankfully, the PDF is laid out in a fairly consistent manner. You can
+easily search for a campsite using <code>Ctrl + F</code> if you want. However, I
+set out to simplify this process using R. The goal was to create a Shiny
+app that would make it easier to find and view campsite availability.</p>
+
+<h2 id="grabbing-the-file">Grabbing the file</h2>
+
+<p>The first step in the process is to find and download the file. We&rsquo;ll
+use R&rsquo;s <strong>XML</strong> package to accomplish this. First we need to parse the
+page, and then find the link for the vacancy report. There should only
+be one PDF on the page, but I wrote the code so that it will continue to
+work if they add more PDFs in the future.</p>
+
+<pre><code>library(shiny)
+library(pdftools)
+library(XML)
+library(stringr)
+
+#parse the page
+htmlp &lt;- htmlParse('http://www.pc.gc.ca/en/pn-np/ab/banff/activ/randonee-backpacking')
+
+#find the PDFs
+links &lt;- htmlp[&quot;//a[contains(@href,'.pdf')]&quot;]
+
+#get description for those links and grab the one we want
+link_desc &lt;- sapply(links,function(x){xmlValue(x)})
+index &lt;- grep(&quot;Backcountry campground vacancy&quot;,link_desc)
+if(length(index)==0) stop(&quot;Vacancy Report Not Found&quot;)
+
+#then pull the link for that report
+xml_data &lt;- unlist(links)[[index]]
+camp_link &lt;- str_extract(xmlAttrs(xml_data),&quot;//.+&quot;)
+camp_link &lt;- paste0(&quot;https:&quot;,camp_link)
+
+#download the PDF
+camp_pdf &lt;- RCurl::getURLContent(camp_link)
+</code></pre>
+
+<h2 id="reading-the-data">Reading the data</h2>
+
+<p>Once we&rsquo;ve downloaded the file, we can read it in using R&rsquo;s <strong>pdftools</strong>
+package. Let&rsquo;s see what we&rsquo;ve got.</p>
+
+<pre><code>#read in and view the file
+pdf_txt &lt;- pdf_text(camp_pdf)
+str(pdf_txt)
+
+##  chr [1:181] &quot;              Banff National Park Backcountry Campground Booking Status\r\n                                      05/10/2017 To &quot;| __truncated__ ...
+</code></pre>
+
+<p>R has read it in as one large character vector, where each element is a
+page of the PDF (hence length = 181).</p>
+
+<h2 id="transforming-the-data">Transforming the data</h2>
+
+<p>I played around with a few different ways to transform the data, and
+below is what I came up. As mentioned earlier, the PDF is in a fairly
+neat format, so there aren&rsquo;t many modifications we need to make besides
+removing a few headers from the first page. Here is the process in a
+nutshell:</p>
+
+<ul>
+<li>Convert the character vector into a list
+
+<ul>
+<li>Within that list, each element (aka page of the PDF) will be its
+own character vector, with the length equal to the number of
+lines on that page. This is because we are splitting on <code>\n</code></li>
+<li>For example, Most of the elements in the list are 40 length
+character vectors. This includes 5 rows of header data, 3 rows
+of footer data, and the rest of the elements represent the
+campsite availability for each date</li>
+</ul></li>
+<li>Transform each element of the list into a data frame, extracting the
+elements we need. Then <code>rbind()</code> them together</li>
+<li>Format the data frame so we can plot the campsite availability</li>
+</ul>
+
+<p>Below is the code along with a preview of the output. I encourage you to
+walk through it line by line to see how it works. The comments should
+help to explain what each line is doing. I relied heavily on the
+<a href="https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">Regular Expressions
+cheatsheet</a>
+by Ian Kopacka in my string extraction functions</p>
+
+<pre><code>#convert text to list
+#note I had orginially split on &quot;*\r\n&quot; but when you publish to Shinyapps there is no \r for some reason so I changed to just \n 
+campList &lt;- strsplit(pdf_txt,&quot;*\n&quot;)
+
+#remove extra header from first page
+campList[[1]] &lt;- campList[[1]][-(1:2)] 
+
+#transform each element (page) of list into data.frame
+camp_df &lt;- lapply(campList,
+                 function(x)
+                 {vecLength &lt;- length(x)
+                 #remove 5 rows of header data and 3 rows of footer data to only keep the dates (only substract 2 to grab 3 rows)
+                 dateChar &lt;- x[-c(1:5,(vecLength-2):vecLength)]
+                 dfLength &lt;- length(dateChar)
+                 #remove spaces from date string, will use this in later transformation
+                 noSpaceVar &lt;- gsub(&quot;[[:blank:]]&quot;,&quot;&quot;,dateChar)
+                 #first number on third line of page contains total number of sites at campground
+                 totalSites &lt;- as.numeric(str_extract(x[3],&quot;\\d+&quot;))
+                 #create our data frame
+                 data.frame(rawTxt=dateChar,
+                            noSpace=noSpaceVar,
+                            area=rep(x[1],dfLength), #first line is area
+                            campground=rep(x[2],dfLength), #second is campground
+                            totalSites=rep(totalSites,dfLength))
+                 }
+                 )
+
+#each data.frame is a separate item in list. combine all into one
+camp_df &lt;- as.data.frame(do.call(rbind,camp_df))
+
+#clean up column types
+camp_df$rawTxt &lt;- as.character(camp_df$rawTxt)
+camp_df$noSpace &lt;- as.character(camp_df$noSpace)
+camp_df$area &lt;- as.character(camp_df$area)
+camp_df$campground &lt;- as.character(camp_df$campground)
+
+#add new columns
+camp_df$year &lt;- str_extract(camp_df$rawTxt,&quot;\\d{4}&quot;) #the 4 digit year
+
+#this grabs the month which is between the two commas
+#had to str_extract twice to remove the first comma
+camp_df$month &lt;- str_extract(str_extract(camp_df$noSpace,&quot;,\\w+[^0-9,]&quot;),&quot;[A-z]+&quot;)
+
+camp_df$day &lt;- str_extract(camp_df$noSpace,&quot;\\d+&quot;) #the first digit in the string is the day
+camp_df$date &lt;- paste(camp_df$year,camp_df$month ,camp_df$day,sep=&quot;-&quot;)
+camp_df$date &lt;- as.Date(camp_df$date,'%Y-%B-%d')
+
+#the last number in the row is the number of sites available, but need to make sure we include if it is negative
+camp_df$sitesAvail &lt;- as.numeric(str_extract(camp_df$rawTxt,&quot;-?\\d+$&quot;))
+
+#remove unecessary columns
+camp_df &lt;- camp_df[,!(names(camp_df) %in% c(&quot;rawTxt&quot;,&quot;noSpace&quot;,&quot;year&quot;,&quot;month&quot;,&quot;day&quot;))]
+
+#report any null values
+#Takakkaw Falls has an extra header line so that is why it shows up (3 entries for the three pages it is on)
+camp_df[!complete.cases(camp_df),]
+
+##                area                                   campground
+## 5547 Yoho-Emerald\r   * &lt;U+25B2&gt;Takakkaw Falls Oct. 15 to June\r
+## 5580 Yoho-Emerald\r   * &lt;U+25B2&gt;Takakkaw Falls Oct. 15 to June\r
+## 5613 Yoho-Emerald\r   * &lt;U+25B2&gt;Takakkaw Falls Oct. 15 to June\r
+##      totalSites date sitesAvail
+## 5547         15 &lt;NA&gt;         NA
+## 5580         15 &lt;NA&gt;         NA
+## 5613         15 &lt;NA&gt;         NA
+
+#remove null values
+camp_df &lt;- camp_df[complete.cases(camp_df),]
+
+#preview data frame
+head(camp_df)
+
+##                    area                   campground totalSites       date
+## 1 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-05
+## 2 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-06
+## 3 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-07
+## 4 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-08
+## 5 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-09
+## 6 Adjacent Banff Town\r   Sp6 &lt;U+2206&gt; - Mt Rundle\r         10 2017-10-10
+##   sitesAvail
+## 1         10
+## 2         10
+## 3         10
+## 4         10
+## 5         10
+## 6         10
+</code></pre>
+
+<p>We did it! We&rsquo;ve scraped a website for a specific link, downloaded the
+file from that link, read the file into R and transformed it into
+something we can use&ndash;all in the name of getting outside!</p>
+
+<h2 id="shiny-app">Shiny App</h2>
+
+<p>Now that we&rsquo;ve got the data in a format we can use, let&rsquo;s create a Shiny
+app allowing users to easily find the availability for a range of dates.
+The full code to build the Shiny app can be found on
+<a href="https://github.com/skcary77/banff-campsites">GitHub</a>, but I&rsquo;ll cover a
+few of the pieces I initially struggled with. The <code>global.R</code> file
+handles all of the preprocessing that I just went over, <code>ui.R</code> creates a
+simple user interface allowing users to select the number of sites they
+want to book, the date range, and select multiple campsites that they
+are interested in. Lastly, <code>server.R</code> handles the relationship between
+our inputs and outputs. There are a
+<a href="https://bookdown.org/weicheng/shinyTutorial/">multitude</a> of <a href="https://shiny.rstudio.com/tutorial/">Shiny
+tutorials</a> available that walk
+through the basics of creating an app for those interested.</p>
+
+<p>Where I had the most trouble was with the reactivity. I needed the data
+frame to update with a new column showing whether their was availability
+(<code>space_avail</code>) based on the number of campsites needed. After reading
+<a href="https://stackoverflow.com/questions/43278595/add-columns-to-a-reactive-data-frame-in-shiny-and-update-them">this
+thread</a>
+on StackOverflow and a few other Shiny tutorials, I realized that I
+needed to create reactive variables. Each time a user updates the number
+of sites needed, <code>server.R</code> recomputes the <code>space_avail</code> variable, and
+<code>cbinds()</code> it our data frame. The data frame will also update any time a
+user changes the date or campground selectors.</p>
+
+<pre><code>#create availability column based on user input
+space_avail &lt;- reactive({factor(camp_df$sitesAvail &gt;= input$sites_needed,labels = c(&quot;Unavailable&quot;,&quot;Available&quot;))})
+
+#create a data frame that includes the new column then subset it based on the other user inputs
+camp &lt;- reactive({cbind(camp_df,space_avail())})
+camp_sub &lt;- reactive({subset(camp(),campground%in%(if(!is.null(input$campground)) {input$campground} else {campground}) 
+                             &amp; date &gt;= input$date_range[1] 
+                             &amp; date &lt;= input$date_range[2])})
+</code></pre>
+
+<p>Lastly, the syntax is a little different when working with reactive
+variables. For example, when plotting the data frame we have to call it
+as <code>camp_sub()</code> instead of just <code>camp_sub</code>. So the call to ggplot starts
+with:</p>
+
+<pre><code>gg &lt;- ggplot(camp_sub(),aes(x=date,y=campground)) + ...
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I hope you found this post helpful. Here is a before and after look of
+what we were able to accomplish. We went from a raw PDF file to an
+interactive Shiny app<br />
+<img src="https://skcary77.github.io/blog/banff-campsites/banff-before-after.png" alt="" /></p>
+
+<p>I really enjoyed working on this project and learning more about regular
+expressions, web scraping, and Shiny. The final Shiny app is available
+<a href="https://followthedata.shinyapps.io/banff-campsites/">here</a> and the full
+code is on <a href="https://github.com/skcary77/banff-campsites">GitHub</a>. Please
+reach out if you have any questions, or let me know if you have any
+suggestions on making the code more efficient.</p>
+
+            </div>
+
+            <div class="pagination">
+                
+                
+            </div>
+        </section>
+        <br>
+        <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        (function() {
+            
+            
+            if (window.location.hostname == "localhost")
+                return;
+            var disqus_shortname = 'tomanistor';
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view comments powered by <a href="http://disqus.com/?ref_noscript">Disqus</a>.</noscript>
+</section>
+
+    </section>
+
+        </main>
+        <footer class="row middle-xs center-xs">
+            
+            <div class="col-xs-3 col-md-2"><a href="https://github.com/tomanistor">GitHub</a></div>
+            
+            
+            <div class="col-xs-3 col-md-2"><a href="https://linkedin.com/in/tomanistor">LinkedIn</a></div>
+            
+            
+            <div class="col-xs-3 col-md-2"><a href="https://twitter.com/TomaNistor">Twitter</a></div>
+            
+            
+            <div class="col-xs-12">
+                
+                Copyright &copy; 2017 Stuart Cary.
+                
+                
+                Theme developed by <a href="https://tomanistor.com">Toma Nistor</a>.
+                
+            </div>
+            
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            
+            <script src="https://skcary77.github.io/scripts/main.js" type="text/javascript"></script>
+            
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        </footer>
+    </body>
+</html>
+
